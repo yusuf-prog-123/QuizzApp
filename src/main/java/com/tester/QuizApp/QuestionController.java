@@ -14,7 +14,7 @@ public class QuestionController {
 	@GetMapping("allQuestion")
 	public String allQuestion() {
 		
-		return "Question testing";
+		return questionService.getAllQuestions();//A method in service class or model class this where operations happenss for different request by the client
 		
 	}
 

@@ -11,11 +11,19 @@ public class questionserrvice {
 	
 	@Autowired
 	Daoooo dao1;
+	
+	
 
 	public List<ModelClass> getAllQuestions() {
 		// TODO Auto-generated method stub
-		return dao1.findAll() ;
+		return dao1.findAll();
 	}
+
+	public List<ModelClass> getquestbycatagory(String catagory) {
+		// TODO Auto-generated method stub
+		return dao1.findBydifficultylevel(catagory);
+	}
+	
 
 }
 

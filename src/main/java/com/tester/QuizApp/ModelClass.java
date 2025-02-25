@@ -18,7 +18,7 @@ import lombok.Data;
 @Table(name ="questiontb")
 public class ModelClass {
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
 	private String category;

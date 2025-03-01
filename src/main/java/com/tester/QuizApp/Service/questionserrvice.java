@@ -23,6 +23,12 @@ public class questionserrvice {
 		// TODO Auto-generated method stub
 		return dao1.findBydifficultylevel(catagory);
 	}
+
+	public String addingQuest(ModelClass questi) {
+		// TODO Auto-generated method stub
+		dao1.save(questi);
+		return "Success";
+	}
 	
 
 }
